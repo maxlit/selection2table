@@ -42,7 +42,7 @@ End Sub
 
 Sub FormatBody(Selection)
 
-Dim xlBorders(6) as Integer
+Dim xlBorders as Variant
 xlBorders = Array(xlEdgeLeft, xlEdgeTop, xlEdgeBottom, xlEdgeRight, xlInsideVertical, xlInsideHorizontal)
 
 Selection.Borders(xlDiagonalDown).LineStyle = xlNone
@@ -66,7 +66,7 @@ End If
 	Selection.Borders(xlDiagonalDown).LineStyle = xlNone
 	Selection.Borders(xlDiagonalUp).LineStyle = xlNone
 
-Dim xlBorders(4) as Integer
+Dim xlBorders as Variant
 xlBorders = Array(xlEdgeLeft, xlEdgeTop, xlEdgeBottom, xlEdgeRight)
 
 For Each xlBorder in xlBorders
@@ -90,7 +90,7 @@ End Sub
 
 Sub FormatColumns(FirstCol, LastCol, FirstRow, LastRow)
 
-Dim xlBorders(4) as Integer
+Dim xlBorders as Variant
 xlBorders = Array(xlEdgeLeft, xlEdgeTop, xlEdgeBottom, xlEdgeRight)
 
 For i = FirstCol To LastCol
